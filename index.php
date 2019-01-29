@@ -75,7 +75,7 @@ function rcl_notice_block( $params ) {
 	$border = !empty( $args['border'] ) ? 'gtr_border' : '';
 
 	$notice_block	 = '<div class="gtr_notify gtr_' . $args['type'] . ' ' . $args['class'] . ' ' . $border . '">';
-	if ( !empty( $args['is_icon'] ) && $args['type'] != 'simple' )
+	if ( !empty( $args['is_icon'] ) && !empty( $icon ) )
 		$notice_block	 .= '<i class="rcli ' . $icon . '" aria-hidden="true"></i>';
 
 	if ( !empty( $args['cookie_id'] ) ) {
@@ -133,12 +133,20 @@ $out ='<h3>Виды блоков:</h3>';
 	$out .= rcl_notice_block( $data3 );
 
 
-	$out .='<div>simple блок</div>';
+	$out .='<div>simple блок (нет иконки)</div>';
 	$data4 = [
 		'type'	 => 'simple',
 		'text'	 => 'Публикаций пока нет'
 	];
 	$out .= rcl_notice_block( $data4 );
+
+	$out .='<div>simple блок - укажем иконку</div>';
+	$data33 = [
+		'type'	 => 'simple',
+		'icon'	 => 'fa-map-o',
+		'text'	 => 'Записей ещё нет'
+	];
+	$out .= rcl_notice_block( $data33 );
 
 
 $out .='<h3>Виды блоков с бордером:</h3>';
