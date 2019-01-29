@@ -1,0 +1,70 @@
+.gtr_notify {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 12px 36px;
+    position: relative;
+}
+.gtr_info {
+    background-color: #fff5ce;
+    color: #7b743f;
+}
+.gtr_info.gtr_border {
+    border: 1px solid #efe5be;
+}
+.gtr_success {
+    background-color: #e0f8c9;
+    color: #457b3f;
+}
+.gtr_success.gtr_border {
+    border: 1px solid #d0e8b9;
+}
+.gtr_warning {
+    background-color: #ffdfe3;
+    color: #a7565f;
+}
+.gtr_warning.gtr_border {
+    border: 1px solid #efcfd3;
+}
+.gtr_simple {
+    background-color: #eee;
+    color: #555;
+}
+.gtr_simple.gtr_border {
+    border: 1px solid #ddd;
+}
+.gtr_notify .rcli {
+    color: rgba(0, 0, 0, 0.08);
+    font-size: 52px;
+    left: -10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gtr_notify_text {
+    text-align: center;
+}
+.gtr_notify_header {
+    color: currentColor;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 5px 5px;
+}
+.gtr_close {
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 15px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+.gtr_close:hover {
+    opacity: .7;
+}
+.gtr_close::before {
+    color: currentColor;
+    content: "\f00d";
+    font-family: rcl-awesome;
+}

@@ -1,0 +1,7 @@
+Name: API RCL-Notice;
+Version: 0.1;
+Support Core: 16.17.0;
+Description: Заготовка на единое API уведомлений;
+Author: Владимир Дружаев (Otshelnik-Fm);
+Author URI: https://otshelnik-fm.ru/;
+Add-on URI: https://codeseller.ru/products/;
