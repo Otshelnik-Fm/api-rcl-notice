@@ -1,41 +1,54 @@
 .gtr_notify {
     box-sizing: border-box;
     font-size: 16px;
-    line-height: 1.4;
-    margin: 5px 0;
+    line-height: normal;
+    margin: 6px 0 !important;
     overflow: hidden;
-    padding: 12px 36px;
+    padding: 12px 36px !important;
     position: relative;
 }
-.gtr_info {
-    background-color: #fff5ce;
-    color: #7b743f;
+.gtr_border {
+    border-width: 1px;
+    border-style: solid;
 }
+/* AAA accebillity color > 7 contrast*/
+.gtr_info {
+    background-color: #fff7da;
+    color: #56562a;
+}
+/* border is background-color down to 20 point in firefox */
 .gtr_info.gtr_border {
-    border: 1px solid #efe5be;
+    border-color: #ebe3c6;
 }
 .gtr_success {
-    background-color: #e0f8c9;
-    color: #457b3f;
+    background-color: #e6f4cd;
+    color: #2e582e;
 }
 .gtr_success.gtr_border {
-    border: 1px solid #d0e8b9;
+    border-color: #d2e0b9;
 }
 .gtr_warning {
-    background-color: #ffdfe3;
-    color: #a7565f;
+    background-color: #ffe0b1;
+    color: #594628;
 }
 .gtr_warning.gtr_border {
-    border: 1px solid #efcfd3;
+    border-color: #ebcc9d;
+}
+.gtr_error {
+    background-color: #f9dcdc;
+    color: #71363e;
+}
+.gtr_error.gtr_border {
+    border-color: #e5c8c8;
 }
 .gtr_simple {
     background-color: #eee;
-    color: #555;
+    color: #4e4e4e;
 }
 .gtr_simple.gtr_border {
-    border: 1px solid #ddd;
+    border-color: #dadada;
 }
-.gtr_notify .rcli {
+.gtr_notify > .rcli {
     color: rgba(0, 0, 0, 0.08);
     font-size: 52px;
     left: -10px;
@@ -46,11 +59,15 @@
 .gtr_notify_text {
     text-align: center;
 }
+.gtr_notify_text > p {
+    margin: 0;
+    padding: 0;
+}
 .gtr_notify_header {
     color: currentColor;
     font-size: 1.1em;
     font-weight: bold;
-    margin: 0 0 5px 5px;
+    margin: 0 0 6px 6px;
 }
 .gtr_close {
     cursor: pointer;
